@@ -1,0 +1,21 @@
+#include <Arduino.h>
+
+const int A = 26;
+const int B = 0;
+int brightness = 0;
+int fade = 5;
+
+void setup() {
+  ledcSetup(B, 5000, 8);
+  ledcAttachPin(A, B);
+}
+
+void loop() {
+  ledcWrite(B, brightness);
+  brightness = brightness + fade;
+
+  if(brightness <= 0 || brightness >= 255){
+    fade = -fade;
+  }
+  delay(50);
+}

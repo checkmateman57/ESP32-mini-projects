@@ -1,0 +1,40 @@
+#include <Arduino.h>
+
+const int A = 13;
+const int C = 14;
+const int E = 26;
+const int G = 33;
+const int I = 21;
+
+void setup() {
+  pinMode(A, OUTPUT);
+  pinMode(C, OUTPUT);
+  pinMode(E, OUTPUT);
+  pinMode(G, OUTPUT);
+  pinMode(I, OUTPUT);
+}
+
+void  loop() {
+  digitalWrite(A, HIGH);
+  delay(100);
+  digitalWrite(C, HIGH);
+  delay(100);
+  digitalWrite(E, HIGH);
+  delay(100);
+  digitalWrite(G, HIGH);
+  delay(100);
+  digitalWrite(I, HIGH);
+  delay(100);
+  digitalWrite(A, LOW);
+  delay(100);
+  digitalWrite(C, LOW);
+  delay(100);
+  digitalWrite(E, LOW);
+  delay(100);
+  digitalWrite(G, LOW);
+  delay(100);
+  digitalWrite(I, LOW);
+  delay(100);
+
+
+}
