@@ -1,0 +1,63 @@
+#include <Arduino.h>
+
+const int redB = 18;
+const int blueB= 19;
+const int yellowB = 21;
+const int greenB = 22;
+const int redL = 13;
+const int blueL = 27;
+const int yellowL = 25;
+const int greenL = 32;
+bool LED1 = false;
+bool LED2 = false;
+bool LED3 = false;
+bool LED4 = false;
+
+
+void setup() {
+    pinMode(redB, INPUT_PULLUP);
+    pinMode(blueB, INPUT_PULLUP);
+    pinMode(yellowB, INPUT_PULLUP);
+    pinMode(greenB, INPUT_PULLUP);
+    pinMode(redL, OUTPUT);
+    pinMode(blueL, OUTPUT);
+    pinMode(yellowL, OUTPUT);
+    pinMode(greenL, OUTPUT);
+}
+
+void duration (int buttonPin) {
+    if (digitalRead(buttonPin) == LOW) {
+        unsigned long startTime = millis();
+
+        while(digitalRead(buttonPin) == LOW) {
+            delay(10);
+        }
+        
+        unsigned long holdTime = millis()   - startTime;
+        
+        if(holdTime >= 4000) {
+            LED4 = !LED4;
+            digitalWrite(greenL, LED4);
+        }
+        else if (holdTime >=3000) {
+            LED3 = !LED3;
+            digitalWrite(yellowL, LED3);
+        }
+        
+        else if (holdTime >= 2000) {
+            LED2 = !LED2;
+            digitalWrite(blueL, LED2);
+        }
+        else if(holdTime >= 1000) {
+            LED1 = !LED1;
+            digitalWrite(redL, LED1);
+        }
+    }
+}
+
+void loop() {
+    duration(redB);
+    duration(blueB);
+    duration(greenB);
+    duration(yellowB);
+}
