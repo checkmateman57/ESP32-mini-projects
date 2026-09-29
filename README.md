@@ -16,7 +16,7 @@ So the first project is literally 5 LEDs blinking in a row and off. Uhhh - that'
 # Second Project
 Now this is actually kind of cool. I've seen on reels how this one guy has a switchboard where the same coloured switch turns on the same coloured light, no  matter their position on the switchboard. So I decided to replicate with a little bit of magic and coding.
 (Try and figure it out without looking at the code) <br>
-<img width="345" height="428" alt="image" src="https://github.com/user-attachments/assets/40c9cd14-f58d-482e-8bab-b9bc3ca4c341" />
+<img width="345" height="428" alt="image" src="https://github.com/user-attachments/assets/40c9cd14-f58d-482e-8bab-b9bc3ca4c341" /> <br>
 Speaking of code, my inexperience to VSC made me commit a lot of things that I didn't want to, so what code is the one you want?
 
 # Getting to the correct code
