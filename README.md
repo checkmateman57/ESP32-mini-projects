@@ -7,6 +7,7 @@ https://youtu.be/HiccO06JOXI
 So I wanted to learn about microcontrollers, and the first kit I got has an esp32 because I heard it's better than Arduino, so I started learning how an ESP32 works. <br>
 Unfortunately, I haven't gotten to learn much over the past 3 months due to school and vacation, but I plan to change that in the coming months. <br>
 I started this project because I find it crazily boring to learn everything there is without making sure I understand it, so after I learn a few components I want to make projects out of them to test my understanding. <br>
+Note: All of the materials below are provided by me, so I do not have or need a BOM. I also have no CAD files, and do not need a .step file. <br>
 
 # First Project
 So the first project is literally 5 LEDs blinking in a row and off. Uhhh - that's it. Pretty lame I can't lie now that I look at it. <br>
